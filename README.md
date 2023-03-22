@@ -20,19 +20,19 @@ As an exampe to what I mean above, you will notice that the `provision-block-sto
 
 ```
 block_volumes = [
-  │ {
-  │ │ name        = "vm_01_cache_064_01",
-  │ │ size        = "64",
-  │ │ volume_type = "ceph",
-  │ │ description = "Cache Storage for myapp",
-  │ },
-  │ {
-  │ │ name        = "vm_01_cache_064_02",
-  │ │ size        = "64",
-  │ │ volume_type = "ceph",
-  │ │ description = "Cache Storage for myapp",
-  │ }
-  ]
+  {
+    name        = "vm_01_cache_064_01",
+    size        = "64",
+    volume_type = "ceph",
+    description = "Cache Storage for myapp",
+  },
+  {
+    name        = "vm_01_cache_064_02",
+    size        = "64",
+    volume_type = "ceph",
+    description = "Cache Storage for myapp",
+  }
+]
 ```
 
 This should help reduce the amount of API calls made against OpenStack to create two (or more) volumes.
@@ -57,7 +57,8 @@ Hopefully these resources will help you to manipulate your resources on OpenStac
 
 ## Project layout
 
-The samples should be able to reach the contents of the `modules` directory, therefore, they are a symbolic link to that directory. Here's the complete directory structure:
+The samples should be able to reach the contents of the `modules` directory, therefore, they are a symbolic link to that directory.
+Here's the complete directory structure:
 
 ```
 .
